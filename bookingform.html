@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bookingform.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="logo.png" alt="logo"></a>
+        </div>
+        <ul>
+            <li class="item active"><a href="#home">Home</a></li>
+            <li class="item"><a href="signup.html">Sign Up</a></li>
+            <li class="item"><a href="login.html">Login</a></li>
+            <li class="item"><a href="gallery.html">Gallery</a></li>
+            <li class="item"><a href="admin.html">Admin Login</a></li>
+        </ul>
+    </nav>
+    <section id="booking">
+        <form class="row" method="POST" action="bookingform.php">
+            <h1 class="h-primary">Book Your Tour Now!!!</h1>
+            <label for="Firstname" name="firstname" class="form-label">First Name</label>
+            <input type="text" class="form-control" name="first_name" placeholder="First name">
+
+            <label for="Last Name" name="lastname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" name="last_name" placeholder="Last name">
+
+
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Eg.xyz@mail.com">
+
+            <label for="cars" class="form-label">Choose Your Tour:</label>
+
+            <select name="tour" id="tour">
+                <option value="Paris">Paris</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Maldives">Maldives</option>
+            </select>
+
+            <label for="phone2numeric" class="form-label">Phone No</label>
+            <input type="phone2numeric" class="form-control" name="phone">
+
+            <button id="btn" class="btn btn-primary">Submit
+            </button>
+
+        </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div>
+                Copyright &COPY;www.tour.com. All rights reserved!
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', 'ul li', function () {
+                $(this).addClass('active').siblings().removeClass('active')
+
+            })
+        </script>
+
+</body>
+
+</html>

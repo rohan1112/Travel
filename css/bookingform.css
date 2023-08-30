@@ -1,0 +1,54 @@
+
+#signup{
+    justify-content: center;
+    align-items: center;
+ 
+ }
+ 
+#booking::before{
+    content: "";
+    background: url(../bookbg.jpg)no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+ .row{
+    display: flex;
+    flex-direction: column;
+    width: 497px;
+    padding: 61px 0px 0px 174px;
+ }
+ .form-control{
+     padding: 10px;
+     border-radius: 10px;
+ }
+ 
+ .form-label{
+     padding: 10px;
+     font-size: 1.3rem;
+ }
+ h1{
+    margin: auto;
+    font-size: 2.8rem !important;
+    color: #1a0080;
+ }
+ 
+.row #btn{
+     padding: 6px;
+     margin: 10px auto;
+     width: 133px;
+     border-radius: 10px;
+     color: white;
+     background-color: green;
+     cursor: pointer;
+}
+
+select{
+    font-size: 1.3rem;
+    border-radius: 10px;
+    size: 160px;
+}

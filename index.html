@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books.com</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="logo.png" alt="logo"></a>
+        </div>
+        <ul>
+            <li class="item active"><a href="#home">Home</a></li>
+            <li class="item"><a href="signup.html">Sign Up</a></li>
+            <li class="item"><a href="login.html">Login</a></li>
+            <li class="item"><a href="gallery.html">Gallery</a></li>
+            <li class="item"><a href="admin.html">Admin Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Tour.com</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maxime nihil minus aliquam</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <a href="bookingform.html">
+            <button class="btn">Book your Trip</button>
+        </a>
+    </section>
+    <section id="ourbooks">
+        <h1 class="h-primary center">Top Destinations</h1>
+        <div id="books">
+
+            <div class="box">
+                <a href="signup.html">
+                    <img src="paris.jpg" alt="Book1">
+                </a>
+                <h2 class="h-secondary center">Paris</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut accusamus
+                    possimus dicta odit corporis cupiditate quasi, alias consectetur animi praesentium
+                    laboriosam recusandae. Sint, obcaecati?</p>
+            </div>
+
+            <div class="box">
+                <a href="signup.html">
+                    <img src="rajasthan.jpg" alt="Book2">
+                </a>
+                <h2 class="h-secondary center">Rajasthan</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut accusamus
+                    possimus dicta odit corporis cupiditate quasi, alias consectetur animi praesentium
+                    laboriosam recusandae. Sint, obcaecati?</p>
+            </div>
+
+
+            <div class="box">
+                <a href="signup.html">
+                    <img src="maldives.jpg" alt="Book3">
+                </a>
+                <h2 class="h-secondary center">Maldives</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut accusamus
+                    possimus dicta odit corporis cupiditate quasi, alias consectetur animi praesentium
+                    laboriosam recusandae. Sint, obcaecati?</p>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            Copyright &COPY;www.tour.com. All rights reserved!
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).on('click', 'ul li', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+
+        })
+    </script>
+
+</body>
+
+</html>

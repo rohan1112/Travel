@@ -1,0 +1,22 @@
+#gallery .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin:auto;
+    border-radius: 23px;
+    background-color: rgb(245 242 242);
+   
+}
+#gallery{
+    margin: 34px;
+    display: flex;
+
+}
+
+#gallery .box img{
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+
+

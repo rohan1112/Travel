@@ -1,0 +1,166 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar  */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: #28282c;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* logo  */
+#logo{
+    margin: 0px 0px;
+}
+
+#logo img{
+    height: 60px;
+    margin: 16px 43px;
+}
+
+/* list  */
+#navbar ul{
+    display: flex;
+    margin: auto;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 0px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.23rem;
+    font-family: 'EB Garamond', serif;
+}
+#navbar ul li a:hover{
+    color: #fbaf03;
+    background-color: white;
+}
+#navbar ul li.active a{
+    color: #fbaf03;
+    background-color: black;
+}
+
+/* Home section  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 38px 2px 71px 628px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(../passportbg.jpg)no-repeat center center/cover;
+    position: absolute;
+    height:440px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'EB Garamond', serif;
+}
+
+#books{
+    margin: 34px;
+    display: flex;
+
+}
+#books .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px ;
+    border-radius: 23px;
+    background-color: rgb(245 242 242);
+   
+}
+
+
+#books .box p{ 
+    font-family: 'EB Garamond', serif;
+    
+}
+#books .box img{
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+/* button */
+.btn{
+    border-radius: 10px;
+    color: white;
+    background-color: brown;
+    margin: 12px;
+    padding: 9px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* Footer  */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+
+
+
+
+/* uiti;ities  */
+.h-primary{
+    font-size: 3.4rem;
+    padding: 8px;
+    font-family: 'Kreon', serif;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 4px;
+    font-family: 'Kreon', serif;
+}
+.center{
+    text-align: center;
+    
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="logo.png" alt="logo"></a>
+        </div>
+        <ul>
+            <li class="item active"><a href="index.html">Home</a></li>
+            <li class="item"><a href="signup.html">Sign Up</a></li>
+            <li class="item"><a href="login.html">Login</a></li>
+            <li class="item"><a href="#paris">Gallery</a></li>
+            <li class="item"><a href="admin.html">Admin Login</a></li>
+        </ul>
+    </nav>
+     <section id="paris">
+        <h1 class="h-primary center">Paris</h1>
+        <div id="gallery">
+            <div class="box">    
+                    <img src="paris1.jpg" alt="Book1">
+            </div>
+
+            <div class="box">    
+                    <img src="paris2.jpg" alt="Book1">
+            </div>
+
+            <div class="box">    
+                    <img src="paris3.jpg" alt="Book1">
+            </div>
+        </div>
+    </section>
+    <section id="rajasthan">
+        <h1 class="h-primary center">Rajasthan</h1>
+        <div id="gallery">
+            <div class="box">    
+                    <img src="rajasthan1.jpg" alt="Book1">
+            </div>
+
+            <div class="box">    
+                    <img src="rajasthan2.jpg" alt="Book1">
+            </div>
+
+            <div class="box">    
+                    <img src="rajasthan3.jpg" alt="Book1">
+            </div>
+        </div>
+    </section>
+    <section id="maldives">
+        <h1 class="h-primary center">Maldives</h1>
+        <div id="gallery">
+            <div class="box">    
+                    <img src="maldives1.jpg"alt="Book1">
+            </div>
+
+            <div class="box">    
+                    <img src="maldives2.jpg" alt="Book1">
+            </div>
+
+            <div class="box">    
+                    <img src="maldives3.jpg" alt="Book1">
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div>
+            Copyright &COPY;www.tour.com. All rights reserved!
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).on('mousedown', 'ul li', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+
+        })
+    </script>
+
+</body>
+
+</html>
